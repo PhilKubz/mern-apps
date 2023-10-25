@@ -3,6 +3,7 @@ import './Header.css'
 
 import PersonIcon from '@mui/icons-material/Person';
 import IconButton from '@mui/material/IconButton';
+import ForumIcon from '@mui/icons-material/Forum';
 import fireLogo from '../../Assets/firelogo.png';
 
 function Header() {
@@ -11,7 +12,12 @@ function Header() {
         <IconButton>
           <PersonIcon fontSize="large" className="headerIcon"/>
         </IconButton>
-        <img src={fireLogo} className="headerLogo" style={{ objectFit: 'contain', height: '40px' }} alt="Fire Logo" />
+
+        <img src={fireLogo} className="headerLogo" alt="Fire Logo"/>
+
+        <IconButton>
+          <ForumIcon fontSize="large" className="headerIcon"/>
+        </IconButton>
     </div>
   )
 }
