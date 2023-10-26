@@ -13,23 +13,23 @@
 
 
 .swipeButtonsLeft {
-    color: lightcoral;
-    padding: 2vw;
+    color: lightcoral !important; 
+    padding: 2vw !important;
 }
 
 .swipeButtonsRight {
-    color: lightcoral;
-    padding: 2vw;
+    color: lightcoral !important;
+    padding: 2vw !important;
 }
 
 .swipeButtonsRepeat {
-    padding: 2vw;
+    padding: 2vw !important;
 }
 
 .swipeButtonsStar {
-    padding: 2vw;
+    padding: 2vw !important;
 }
 
 .swipeButtonsLightning {
-    padding: 2vw;
+    padding: 2vw !important;
 }
