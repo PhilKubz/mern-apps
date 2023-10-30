@@ -45,6 +45,7 @@ function Cards() {
                 className="card"
               >
                 <h3>{person.name}</h3>
+                <p>{person.age}</p>
               </div>
             </TinderCard>
           ))}

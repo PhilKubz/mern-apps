@@ -2,20 +2,21 @@
     position: relative;
     background-color: white;
     background-repeat: no-repeat;
-    width: 600px;
+    width: 700px;
     padding: 20px;
-    max-width: 85vw;
-    height: 50vh;
+    max-width: 90vw;
+    height: 60vh;
     box-shadow: 0px 18px 53px 0px rgba(0, 0, 0, 0.3);
     border-radius: 20px;
-    border-size: cover;
-    background-position: center;;
+    border: cover;
+    background-position: center;
+    background-size: cover;
 }
 
 .cardsContainer {
     display: flex;
     justify-content: center;
-    margin-top: 10vh;
+    margin-top: 1vh;
 }
 
 .swipe {
@@ -26,5 +27,22 @@
     position: absolute;
     bottom: 0;
     margin: 10px;
+    margin-bottom: 28px;
     color: white;
+    font-size: 24px;
+}
+
+.card p {
+    position: absolute;
+    bottom: 0;
+    margin: 10px;
+    color: white;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 830px) {
+    .card {
+        height: 70vh;
+        scale: 95%;
+    }
 }

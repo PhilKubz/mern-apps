@@ -1,6 +1,6 @@
 .swipeButtons {
     position: fixed;
-    bottom:10vh;
+    bottom: 6vh;
     display: flex;
     width: 100%;
     justify-content: space-evenly;
@@ -9,15 +9,23 @@
 .swipeButtons .MuiIconButton-root {
     background-color: white;
     box-shadow: 0px 18px 53px 0px rgba(0, 0, 0, 0.3);
+    height: 50px;
+    width: 50px;
+    position: relative;
+    z-index: 10 !important;
+}
+
+.swipeButtons .MuiIconButton-root:hover {
+    scale: 110%;
+    background-color: white;
 }
 
 
-.swipeButtonsLeft {
-    color: lightcoral !important; 
+.swipeButtonsClose {
     padding: 2vw !important;
 }
 
-.swipeButtonsRight {
+.swipeButtonsHeart {
     color: lightcoral !important;
     padding: 2vw !important;
 }
@@ -26,10 +34,9 @@
     padding: 2vw !important;
 }
 
-.swipeButtonsStar {
-    padding: 2vw !important;
-}
 
-.swipeButtonsLightning {
-    padding: 2vw !important;
+@media screen and (max-width: 830px) {
+    .swipeButtons {
+        bottom: 3vh;
+    }
 }
