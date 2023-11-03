@@ -1,17 +1,18 @@
 import React from 'react';
-import './App.css';
-import Header from './Components/Header/Header';
-import Cards from './Components/Cards/Cards';
-import SwipeButtons from './Components/SwipeButtons/SwipeButtons';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import LandingPage from './Components/LandingPage/LandingPage'; // Import your LandingPage component
+import MainApplication from './Components/MainApplication/MainApplication'; // Import your MainApplication component
 
 function App() {
   return (
-    <div className="App">
-
-      <Header />
-      <Cards />
-      <SwipeButtons />
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/main" element={<MainApplication />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
