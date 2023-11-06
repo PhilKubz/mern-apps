@@ -4,12 +4,13 @@
     justify-content: space-between;
     z-index: 5;
     border-bottom: 3px solid #f9f9f9;
-    margin: 0px 10px 0px 10px;
+    padding: 0vw 10vw 0vw 10vw;
+    position: relative;
 }
 
 .header .headerLogo {
     object-fit: contain;
-    height: 50px;
+    height: 60px;
     animation: pulse 3.5s ease-in-out 1;
 }
 
@@ -20,12 +21,19 @@
 
 @keyframes pulse {
     0%, 100% {
-        transform: scale(1); /* Normal size */
+        transform: scale(1);
     }
     50% {
-        transform: scale(1.25); /* 1.3x size */
+        transform: scale(1.25);
     }
     75% {
-        transform: scale(1.7); /* 1.8x size */
+        transform: scale(1.6);
+    }
+}
+
+
+  @media screen and (max-width: 830px) {
+    .header{
+        padding: 0vw 5vw 0vw 5vw;
     }
 }

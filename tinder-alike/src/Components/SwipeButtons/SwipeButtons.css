@@ -2,6 +2,7 @@
     position: fixed;
     bottom: 6vh;
     display: flex;
+    flex-direction: row;
     width: 100%;
     justify-content: space-evenly;
 }
@@ -37,6 +38,6 @@
 
 @media screen and (max-width: 830px) {
     .swipeButtons {
-        bottom: 3vh;
+        bottom: 2.6vh;
     }
 }
