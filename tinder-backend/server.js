@@ -38,5 +38,37 @@ app.get("/tinder/cards", async (req, res) => {
     }
 });
 
+app.get('/tinder/cards/:id', async (req, res) => {
+    const cardId = req.params.id;
+    try {
+      const card = await Cards.findById(cardId);
+      if (card) {
+        res.status(200).send(card);
+      } else {
+        res.status(404).send(`Card with ID: ${cardId} not found`);
+      }
+    } catch (err) {
+      res.status(500).send(err);
+    }
+});
+
+
+app.delete('/tinder/cards/:id', async (req, res) => {
+    const cardId = req.params.id;
+    try {
+      const deletedCard = await Cards.findByIdAndDelete(cardId);
+      if (deletedCard) {
+        res.status(200).send(`Deleted card with ID: ${cardId}`);
+      } else {
+        res.status(404).send(`Card with ID: ${cardId} not found`);
+      }
+    } catch (err) {
+      res.status(500).send(err);
+    }
+});
+  
+  
+  
+
 // Listener
 app.listen(port, () => console.log(`Listening on localhost ${port}`));
