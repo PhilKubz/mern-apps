@@ -6,12 +6,12 @@
     padding: 20px;
     max-width: 90vw;
     height: 60vh;
-    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3);
     border-radius: 20px;
     border: cover;
     background-position: center;
     background-size: cover;
     z-index: 1000;
+    box-shadow: 0 9px 20px 0 rgba(0,0,0,.3);
 }
 
 .card img {
@@ -25,7 +25,7 @@
 .cardsContainer {
     display: flex;
     justify-content: center;
-    margin-top: 1vh;
+    margin-top: 3vh;
 }
 
 .swipe {
@@ -53,5 +53,11 @@
     .card {
         height: 70vh;
         scale: 95%;
+    }
+
+    .cardsContainer {
+        display: flex;
+        justify-content: center;
+        margin-top: 1vh;
     }
 }

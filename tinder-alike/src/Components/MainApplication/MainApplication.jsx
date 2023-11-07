@@ -6,10 +6,12 @@ import './MainApplication.css';
 
 const MainApplication = () => {
     return (
-        <div className="mainApp">
-            <Header />
-            <Cards />
-            <Swipebuttons />
+        <div className="mainAppStyler">
+            <div className="mainApp">
+                <Header />
+                <Cards />
+                <Swipebuttons />
+            </div>
         </div>
     );
 }
