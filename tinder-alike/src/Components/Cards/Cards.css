@@ -1,3 +1,7 @@
+.cards {
+    background-image: linear-gradient(to bottom right, #FF5722, #FF9800);
+}
+
 .card {
     position: relative;
     background-color: white;

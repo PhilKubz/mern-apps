@@ -1,10 +1,16 @@
+.swipeButtonsContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .swipeButtons {
     position: fixed;
     bottom: 6vh;
     display: flex;
     flex-direction: row;
-    width: 100%;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    width: 35%;
 }
 
 .swipeButtons .MuiIconButton-root {
@@ -39,8 +45,8 @@
 
 @media screen and (max-width: 830px) {
     .swipeButtons {
-        bottom: 4vh;
-
+        bottom: 2vh;
+        width: 65%;
     }
 
     .swipeButtons .MuiIconButton-root {

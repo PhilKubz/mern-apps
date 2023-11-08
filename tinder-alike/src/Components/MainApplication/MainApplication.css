@@ -1,6 +1,12 @@
-
 .mainApp {
     overflow: hidden;
 }
 
 
+
+@media screen and (max-width: 830px) {
+    .mainApp {
+        margin-left: 0vw;
+        margin-right: 0vw;
+    }
+}   

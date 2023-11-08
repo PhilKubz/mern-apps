@@ -19,18 +19,20 @@ function Swipebuttons() {
   };
 
   return (
-    <div className="swipeButtons">
-      <IconButton className="swipeButtonsClose" onClick={handleSwipeLeft}>
-        <CloseIcon fontSize="large" />
-      </IconButton>
+    <div className="swipeButtonsContainer">
+      <div className="swipeButtons">
+        <IconButton className="swipeButtonsClose" onClick={handleSwipeLeft}>
+          <CloseIcon fontSize="large" />
+        </IconButton>
 
-      <IconButton className="swipeButtonsRepeat" onClick={handleRepeatClick}>
-        <ReplayIcon fontSize="large" />
-      </IconButton>
+        <IconButton className="swipeButtonsRepeat" onClick={handleRepeatClick}>
+          <ReplayIcon fontSize="large" />
+        </IconButton>
 
-      <IconButton className="swipeButtonsHeart" onClick={handleSwipeRight}>
-        <FavoriteIcon fontSize="large" />
-      </IconButton>
+        <IconButton className="swipeButtonsHeart" onClick={handleSwipeRight}>
+          <FavoriteIcon fontSize="large" />
+        </IconButton>
+      </div>
     </div>
   )
 }
